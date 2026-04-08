@@ -1,0 +1,171 @@
+.game-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.scoreboard {
+  display: flex;
+  gap: 2rem;
+  background: var(--card-bg);
+  padding: 1.5rem 3rem;
+  border-radius: 20px;
+  border: 1px solid var(--card-border);
+  backdrop-filter: blur(10px);
+  box-shadow: var(--shadow);
+}
+
+.score-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.score-label {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--text-secondary);
+}
+
+.score-value {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: var(--text-primary);
+}
+
+.arena {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+  width: 100%;
+  min-height: 300px;
+}
+
+.choice-display {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  width: 200px;
+}
+
+.choice-icon {
+  font-size: 6rem;
+  width: 150px;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  border-radius: 30px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease;
+}
+
+.choice-icon.shaking {
+  animation: shake 0.5s infinite;
+}
+
+@keyframes shake {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-20px); }
+  100% { transform: translateY(0); }
+}
+
+.player-label {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+}
+
+.controls {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.control-btn {
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  padding: 1.5rem;
+  border-radius: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  min-width: 120px;
+  backdrop-filter: blur(10px);
+  cursor: pointer;
+}
+
+.control-btn:hover {
+  background: var(--glass-border);
+  border-color: var(--accent-color);
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px var(--accent-glow);
+}
+
+.control-btn:active {
+  transform: scale(0.95);
+}
+
+.btn-emoji {
+  font-size: 2.5rem;
+}
+
+.btn-text {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+}
+
+.result-message {
+  height: 60px;
+  font-size: 1.5rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  padding: 0 2rem;
+}
+
+.result-win { color: #4ade80; text-shadow: 0 0 15px rgba(74, 222, 128, 0.4); }
+.result-loss { color: #f87171; text-shadow: 0 0 15px rgba(248, 113, 113, 0.4); }
+.result-draw { color: #fbbf24; text-shadow: 0 0 15px rgba(251, 191, 36, 0.4); }
+
+.reset-btn {
+  margin-top: 2rem;
+  background: transparent;
+  color: var(--text-secondary);
+  border: 1px solid var(--card-border);
+  padding: 0.6rem 1.2rem;
+  border-radius: 10px;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.reset-btn:hover {
+  color: var(--text-primary);
+  border-color: var(--text-primary);
+}
+
+@media (max-width: 640px) {
+  .arena {
+    gap: 1rem;
+    flex-direction: column;
+  }
+  .controls {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  h1 {
+    font-size: 2.5rem;
+  }
+}
