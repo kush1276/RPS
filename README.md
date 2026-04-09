@@ -1,16 +1,17 @@
-# React + Vite
+✊✋✌️ RPS – Rock Paper Scissors Game
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A beautifully designed and interactive Rock Paper Scissors (RPS) game built with modern web technologies. Play against the computer, track scores, and enjoy a smooth, elegant UI.
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
-
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+🚀 Features
+🎮 Play Rock, Paper, Scissors against the computer
+🧠 Randomized computer moves
+📊 Live score tracking (Player vs Computer)
+🔄 Round counter
+🎯 Instant result display (Win / Lose / Draw)
+💎 Clean, modern, and responsive UI
+⚡ Fast and lightweight
+🛠️ Tech Stack
+React.js – Frontend framework
+JavaScript (ES6+) – Logic and interactivity
+Tailwind CSS – Styling and UI design
+HTML5 & CSS3
